@@ -5,7 +5,9 @@ describe 'osquery', :type => :class do
   describe "class on Redhat family with no parameters, basic test" do
     let :facts do
       {
-        :operatingsystem => 'Redhat'
+        :operatingsystem => 'Redhat',
+        :processorcount  => 1,
+        :operatingsystemmajrelease => 1
       }
     end
 
@@ -18,7 +20,9 @@ describe 'osquery', :type => :class do
   describe "class on CentOS family with no parameters, basic test" do
     let :facts do
       {
-        :operatingsystem => 'CentOS'
+        :operatingsystem => 'CentOS',
+        :processorcount  => 1,
+        :operatingsystemmajrelease => 1
       }
     end
 
@@ -31,7 +35,9 @@ describe 'osquery', :type => :class do
   describe "class on Scientific linux family with no parameters, basic test" do
     let :facts do
       {
-        :operatingsystem => 'Scientific'
+        :operatingsystem => 'Scientific',
+        :processorcount  => 1,
+        :operatingsystemmajrelease => 1
       }
     end
 
@@ -44,7 +50,9 @@ describe 'osquery', :type => :class do
   describe "class on Amazon linux family with no parameters, basic test" do
     let :facts do
       {
-        :operatingsystem => 'Amazon'
+        :operatingsystem => 'Amazon',
+        :processorcount  => 1,
+        :operatingsystemmajrelease => 1
       }
     end
 
